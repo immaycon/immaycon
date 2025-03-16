@@ -1,16 +1,22 @@
-## Hi there 👋
+<?php
+namespace MayconMacedo;
 
-<!--
-**immaycon/immaycon** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-
-Here are some ideas to get you started:
-
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+class About extends Me
+{
+    public function getPersonalInfo(): array
+    {
+        return [
+            'name'     => 'Maycon Macedo',
+            'position' => 'Junior Full Stack Developer',
+            'location' => 'Nova Friburgo, RJ - Brazil 🇧🇷',
+        ];
+    }
+    public function getSkills(): array
+    {
+        return [
+            'languages'  => ['Python', 'C#', 'JavaScript', 'HTML', 'CSS', 'PHP'],
+            'frameworks' => ['React', 'React Native', 'Laravel', 'Docker', 'Nodejs', 'Angular', 'WordPress'],
+            'databases'  => ['MySQL', 'PostgreSQL', 'Fauna']
+        ];
+    }
+}
